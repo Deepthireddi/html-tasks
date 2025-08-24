@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bus Pass Application</title>
+</head>
+<body>
+    <center><img src="tsrtc_logo.png" width="300"></center>
+    <center><h2><span style="color: blue;">ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</span></h2></center>
+    <center><h2>STUDENT BUS PASS APPLICATION UPTO SSC</h2></center>
+
+    <form>
+        <fieldset>  
+            <legend><span style="color: blue;">1.Student Details</legend>
+            
+            <label for="fullname">Full Name*:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" 
+                autofocus autocomplete="off"  
+                pattern="[a-zA-Z\s]+" maxlength="20" minlength="5" autocomplete="off" required><br>
+            <small style="color: red;">Maximum characters:20</small><br><br>
+
+            <label>Date of Birth*:</label>
+            <input type="text" name="dob_day" placeholder="DD" size="2" maxlength="2"  autocomplete="off"> /
+            <input type="text" name="dob_month" placeholder="MM" size="2" maxlength="2" autocomplete="off" required>/ 
+            <input type="text" name="dob_year" placeholder="YYYY" size="4" maxlength="4" autocomplete="off" required> 
+            <br><small>(DD/MM/YYYY)</small><br><br>
+            
+            <label for="tel">Tel*:</label>
+            <input type="tel" id="tel" name="tel" placeholder="enter ph.no"
+                 autocomplete="off" pattern="[6789][0-9]+" maxlength="10" required><br><br>
+            
+            <label for="photoFile">Photo*:</label>
+            <input type="file" id="photoFile" name="photoFile" required><br>
+            <small>(Upload your photo)</small><br><br>
+
+            <label for="aadhaar">Aadhaar Card Number*:</label>
+            <input type="text" id="aadhaar" name="aadhaar" placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{12}" title="Enter a valid 12-digit Aadhaar Number" method="post" required><br><br>
+            <label for="E-mail">E-mail*:</label>
+            <input type="E-mail" id="E-mail" name="E-mail" placeholder="abc@gmail.com" 
+                autocomplete="off" pattern="[a-z0-9._%+-]+@gmail\.com" autocomplete="off" required><br><br>
+            
+            <label for="gender">Gender*:</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+
+            <label for="Father's/Guardian's Name">Father's/Guardian's Name*</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" 
+                autofocus autocomplete="off"  
+                pattern="[a-zA-Z\s]+" maxlength="20" minlength="5" autocomplete="off" required><br>
+            </fieldset>
+
+            <fieldset>
+            <legend><span style="color: blue;">2.Residential Address Details</legend>
+            <label for="address">Applicant Address*:</label>
+            <textarea maxlength="100" id="address" name="address" rows="2" cols="30" placeholder="enter address" pattern="[a-zA-Z0-9\s,./-]+" autocomplete="off" required></textarea><br>
+            <small style="color: red;">Maximum characters:100</small><br><br>
+
+            <label for="district">District<span style="color: red;">*</span></label>
+            <select name="district" id="district">
+                <option disabled selected>select</option> 
+                <option>KRISHNA</option> 
+                <option>KADAPA</option> 
+                <option>CHITTOR</option> 
+                <option>GUNTUR</option> 
+            </select>
+            <br>
+            <br>
+
+            <label for="Mandal">Mandal<span style="color: red;">*</span></label>
+            <select id="Mandal" name="Mandal">
+                <option disabled selected>select</option> 
+                <option>VEERULAPADU</option> 
+                <option>NANDIGAMA</option> 
+                <option>VIJAYAWADA</option>
+            </select><br><br>
+            
+            <label for="Village">Village<span style="color: red;">*</span>:</label>
+            <select id="Village" name="village" required>
+                <option disabled selected>select</option> 
+                <option>PEDDAPURAM</option> 
+                <option>ALLURU</option> 
+                <option>KANCHIKACHERLA</option> 
+            </select><br><br>
+
+            <label for="pincode">Pincode<span style="color: red;">*</span></label>
+            <input type="number" id="pincode" placeholder="enter pincode">
+            </fieldset><br>
+
+            <fieldset>
+            <legend style="color: blue;">Pass Type Details</legend>
+            <label for="City">city<span style="color: red;">*</span>:</label>
+            <select id="City" name="City" required>
+                <option disabled selected>Select</option> 
+                <option>VIJAYAWADA</option> 
+                <option>VIZAG</option> 
+                <option>NELLORE</option> 
+            </select><br><br>
+
+            <label for="pass type">Pass type<span style="color: red;">*</span>:</label>
+            <select id="pass type name="pass type" required>
+                <option disabled selected>Select</option> 
+                <option>GREATER PASS</option> 
+                <option>ORDINARY PASS</option> 
+                <option>METRO PASS</option>
+                <option>DELUXE PASS</option>
+            </select><br>
+            </fieldset><br>
+
+            <fieldset>
+            <legend style="color: blue;">5.Mode of Payment & Pass Collection</legend>
+            <label>Select Payment Mode</label>
+            <select name="payment_mode">
+                <option>Online</option>
+                <option>Offline</option>
+            </select><br><br>
+
+            <label>Select Pass Delivery Mode</label>
+            <select name="delivery_mode">
+  <option>Manually</option>
+  <option>By Post</option>
+            </select><br><br>
+            </fieldset><br>
+
+            <label>Captcha: <b>HhJ3zf</b></label>
+            <input type="text" name="captcha" placeholder="Enter Captcha"><br><br>
+            
+        <center><input type="submit" value="Submit" style="background-color: rgb(106, 239, 123);"></center>
+    </form>
+</body>
+</html>
+
