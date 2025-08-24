@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Customer Registration</title>
+</head>
+<body style="background-color: rgb(220, 243, 244);">
+    <h1>New Customer Registration Form</h1>
+    <h2>Customer Details:</h2>
+    <form action="./response.html" >
+        <label for="fullname">Full Name*:</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="first name" autofocus autocomplete="off" required>
+        <input type="text" id="lastname" name="lastname" placeholder="last name" autocomplete="off" required><br><br>
+        <label for="address">Address*:</label><br>
+        <textarea id="address" name="address" rows="2" cols="30" placeholder="enter address" required></textarea><br><br>
+        <label for="tel">Tel*:</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="enter ph.no" autocomplete="off" required><br><br>
+        <label for="E-mail">E-mail:</label><br>
+        <input type="E-mail" id="E-mail" name="E-mail" placeholder="abc@gmail.com" autocomplete="off" required><br><br>
+        <label for="dob">D O B:</label><br>
+        <input type="date" id="dob" name="dob" autocomplete="off" required><br><br>
+        <label for="occupation">Occupation*:</label><br>
+        <input type="radio" name="occupation" value="Agriculture" required> Agriculture
+        <input type="radio" name="occupation" value="Employee"> Employee
+        <input type="radio" name="occupation" value="Doctor"> Doctor
+        <input type="radio" name="occupation" value="Lawyer"> Lawyer
+        <input type="radio" name="occupation" value="Teacher"> Teacher<br><br>
+        <label for="aadhaar">Aadhaar Card Number*:</label><br>
+        <input type="text" id="aadhaar" name="aadhaar" placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{12}" title="Enter a valid 12-digit Aadhaar Number" method="post" required>
+        <p>upload aadhar card</p>
+        <input type="file" name="Aadhar file" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br><br>
+        <input type="submit" value="Submit" style="background-color: rgb(23, 209, 23);">
+        <input type="reset" value="Reset" style="background-color: red;">
+    </form>
+</body>
+</html>
